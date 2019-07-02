@@ -121,6 +121,7 @@
         <Button
             android:layout_width="match_parent"
             android:text="提交"
+            android:id="@+id/commit"
             android:background="@drawable/option_feedback_three_shape"
             android:textColor="#ffffff"
             android:layout_height="wrap_content" />
