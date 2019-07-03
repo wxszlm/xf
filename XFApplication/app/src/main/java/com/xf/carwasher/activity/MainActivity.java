@@ -2,9 +2,11 @@ package com.xf.carwasher.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.amap.api.maps2d.MapView;
 import com.xf.carwasher.R;
+import com.xf.carwasher.Utils.SHA;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         mMapView = (MapView) findViewById(R.id.map);
         //在activity执行onCreate时执行mMapView.onCreate(savedInstanceState)，创建地图
         mMapView.onCreate(savedInstanceState);
+     //   Toast.makeText(MainActivity.this, SHA.sHA1(this),Toast.LENGTH_LONG).show();
     }
     @Override
     protected void onDestroy() {
