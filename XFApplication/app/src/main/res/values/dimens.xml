@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_textSize">15sp</dimen>
+
+    <dimen name="app_title">17sp</dimen>
+
+    <dimen name="app_image_width">18dp</dimen>
+    <dimen name="app_image_height">18dp</dimen>
+
+    <dimen name="app_padding_left">16dp</dimen>
+    <dimen name="app_padding_right">16dp</dimen>
+
+    <dimen name="app_margin_top">30dp</dimen>
+
+    <dimen name="app_left">10dp</dimen>
+    <dimen name="app_right">9dp</dimen>
+</resources>
