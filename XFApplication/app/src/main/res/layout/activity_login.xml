@@ -18,8 +18,8 @@
 
         <ImageView
             android:id="@+id/removeBankCardInfo"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
+            android:layout_width="@dimen/app_image_width"
+            android:layout_height="@dimen/app_image_height"
             android:src="@mipmap/xxxxxxxx" />
 
         <TextView
@@ -32,7 +32,7 @@
 
             android:text="登录"
             android:textColor="#161616"
-            android:textSize="17sp"
+            android:textSize="@dimen/app_title"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -62,11 +62,11 @@
             android:inputType="textEmailAddress"
             android:text="@string/app_phone"
             android:textColor="@color/colorPhone"
-            android:textSize="15dp" />
+            android:textSize="@dimen/app_textSize"/>
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="5dp"
+            android:layout_height="1dp"
             android:layout_marginLeft="46dp"
             android:layout_marginTop="11dp"
             android:layout_marginRight="45dp"
@@ -94,11 +94,11 @@
                 android:inputType="textEmailAddress"
                 android:text="@string/app_code"
                 android:textColor="@color/colorPhone"
-                android:textSize="15dp" />
+                android:textSize="@dimen/app_textSize"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="1dp"
                 android:layout_marginLeft="46dp"
                 android:layout_marginTop="11dp"
                 android:layout_marginRight="45dp"
@@ -106,7 +106,7 @@
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
-            android:textSize="15sp"
+            android:textSize="@dimen/app_textSize"
             android:textColor="@color/colorGetCode"
             android:gravity="center"
             android:layout_marginRight="46dp"
@@ -125,14 +125,16 @@
         android:layout_height="wrap_content">
         <Button
             android:layout_width="match_parent"
-            android:text="登录"
+            android:text="@string/app_login"
+            android:textSize="@dimen/app_textSize"
             android:background="@drawable/option_feedback_three_shape"
             android:textColor="#ffffff"
             android:layout_height="wrap_content" />
         <Button
             android:layout_width="match_parent"
-            android:text="微信快捷登录"
+            android:text="@string/app_fast_login"
             android:layout_marginTop="50dp"
+            android:textSize="@dimen/app_textSize"
             android:background="@drawable/option_feedback_three_shape"
             android:textColor="#ffffff"
             android:layout_height="wrap_content" />
@@ -140,7 +142,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_marginLeft="69dp"
@@ -152,14 +154,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:text="@string/app_agree"
-            android:textSize="15sp"
+            android:textSize="@dimen/app_textSize"
             android:textColor="@color/colorAgree"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_width="wrap_content"
             android:text="@string/app_user"
             android:layout_marginLeft="3dp"
-            android:textSize="15sp"
+            android:textSize="@dimen/app_textSize"
             android:textColor="@color/colorUser"
             android:layout_height="wrap_content" />
     </LinearLayout>

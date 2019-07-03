@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="6dp">
+
+        <ImageView
+            android:id="@+id/removeBankCardInfo"
+            android:layout_width="@dimen/app_image_width"
+            android:layout_height="@dimen/app_image_height"
+            android:src="@mipmap/xxxxxxxx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="PingFang SC"
+            android:gravity="center"
+            android:lineHeight="24dp"
+            android:text="我的"
+            android:textColor="#161616"
+            android:textSize="@dimen/app_title"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/app_margin_top"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/app_padding_left"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/head"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/app_head"
+                android:layout_marginLeft="@dimen/app_left"
+                android:layout_marginRight="@dimen/app_right"
+                android:textSize="@dimen/app_textSize"
+                android:fontFamily="PingFang SC"
+                android:textColor="@color/colorGetCode"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/level"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/app_margin_top"
+            android:paddingLeft="@dimen/app_padding_left"
+            android:paddingRight="@dimen/app_padding_right"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawableLeft="@mipmap/text"
+                android:drawablePadding="@dimen/app_left"
+                android:layout_width="wrap_content"
+                android:text="@string/app_head"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/app_left"
+                android:layout_marginRight="@dimen/app_right"
+                android:textSize="@dimen/app_textSize"
+                android:fontFamily="PingFang SC"
+                android:textColor="@color/colorGetCode"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/left"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

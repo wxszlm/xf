@@ -7,4 +7,13 @@
     <string name="app_user">《用户协议》</string>
     <string name="app_main_order_btn">订单</string>
     <string name="app_main_user_btn">我的</string>
+    <string name="app_fast_login">微信快捷登录</string>
+    <string name="app_login">登录</string>
+    <string name="app_head">兔子不吃草嘞</string>
+    <string name="app_history_order">历史订单</string>
+    <string name="app_you_code">优惠券</string>
+    <string name="app_dui_code">兑换码</string>
+    <string name="app_share">邀请好友享优惠</string>
+    <string name="app_user_one">用户协议</string>
+    <string name="app_setting">设置</string>
 </resources>
