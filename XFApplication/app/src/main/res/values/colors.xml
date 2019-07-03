@@ -7,4 +7,5 @@
     <color name="colorGetCode">#333333</color>
     <color name="colorUser">#23A5FB</color>
     <color name="colorAgree">#666666</color>
+    <color name="main_btn_text">#ff333333</color>
 </resources>

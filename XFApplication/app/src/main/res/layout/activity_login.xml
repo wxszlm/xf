@@ -29,7 +29,7 @@
             android:layout_weight="1"
             android:fontFamily="PingFang SC"
             android:gravity="center"
-            android:lineHeight="24dp"
+
             android:text="登录"
             android:textColor="#161616"
             android:textSize="17sp"
