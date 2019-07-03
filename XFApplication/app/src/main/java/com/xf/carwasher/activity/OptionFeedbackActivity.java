@@ -1,9 +1,11 @@
-package com.xf.carwasher;
+package com.xf.carwasher.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.xf.carwasher.R;
 
 public class OptionFeedbackActivity extends AppCompatActivity {
 
