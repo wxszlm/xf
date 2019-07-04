@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 26
     defaultConfig {
         applicationId "com.xf.carwasher"
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -42,5 +42,4 @@ dependencies {
 
     //fastjson
     api 'com.alibaba:fastjson:1.2.58'
-    implementation files('libs/Android_Map3D_SDK_V6.9.0_20190530.jar')
 }

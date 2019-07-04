@@ -29,7 +29,6 @@
             android:layout_weight="1"
             android:fontFamily="PingFang SC"
             android:gravity="center"
-            android:lineHeight="24dp"
             android:text="我的"
             android:textColor="#161616"
             android:textSize="@dimen/app_title"

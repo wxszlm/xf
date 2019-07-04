@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- base -->
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
@@ -7,5 +8,9 @@
     <color name="colorGetCode">#333333</color>
     <color name="colorUser">#23A5FB</color>
     <color name="colorAgree">#666666</color>
-    <color name="main_btn_text">#ff333333</color>
+    <color name="colorWhite">#ffffffff</color>
+    <!-- main -->
+    <color name="base_text">#ff333333</color>
+    <color name="main_tip">#ff707070</color>
+
 </resources>
