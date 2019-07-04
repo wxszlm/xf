@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="迅风智能洗车"
+            android:text="@string/main_title"
             android:textColor="@color/base_text"
             android:textSize="@dimen/app_base_title_text_size"
             />
@@ -91,6 +91,7 @@
         android:layout_marginBottom="@dimen/main_scan_margin_bottom"
         android:gravity="center_horizontal">
         <RelativeLayout
+            android:id="@+id/scan_btn"
             android:layout_width="140dp"
             android:layout_height="44dp"
             android:gravity="center_vertical"
@@ -155,4 +156,112 @@
             android:layout_marginTop="@dimen/app_base_title_height"
             android:src="@mipmap/main_tip2"/>
     </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_dialog_height"
+        android:visibility="gone"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/main_dialog_close"
+                android:layout_marginRight="@dimen/main_dialog_close_right"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_dialog_content_height"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:background="@drawable/base_topradius_white_bg"
+            android:paddingLeft="@dimen/main_dialog_close_right"
+            android:paddingRight="@dimen/main_dialog_close_right"
+            android:paddingTop="@dimen/main_dialog_padding_top"
+            android:paddingBottom="@dimen/main_dialog_padding_top">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="杭州富阳场口加油站杭州富阳场口加油站"
+                    android:ellipsize="end"
+                    android:textColor="@color/base_text"
+                    android:singleLine="true"
+                    android:textSize="@dimen/app_base_title_text_size"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="@string/base_shop_status_normal"
+                    android:textColor="@color/base_normal"
+                    android:textSize="@dimen/main_dialog_text_size" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="杭州场口镇中心小学杭州场口镇中心小学杭州场口镇中心小学"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/base_text2"
+                    android:textSize="@dimen/main_dialog_text_size"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距您20km"
+                    android:textColor="@color/base_text2"
+                    android:layout_gravity="right|center_vertical"
+                    android:textSize="@dimen/main_dialog_text_size"
+                    />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                >
+                <TextView
+                    android:layout_width="84dp"
+                    android:layout_height="28dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="地图导航"
+                    android:gravity="center"
+                    android:background="@drawable/main_dialog_gps_bg"/>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/main_dialog_line">
+
+            </LinearLayout>
+            <com.xf.carwasher.view.RoundImageView
+                android:id="@+id/dialog_shop_picture"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="225dp"
+                android:src="@mipmap/car_wash"
+                app:radius="20dp"
+                android:scaleType="center"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
 </FrameLayout>

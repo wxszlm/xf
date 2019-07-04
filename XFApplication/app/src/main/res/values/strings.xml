@@ -14,9 +14,14 @@
     <string name="app_share">邀请好友享优惠</string>
     <string name="app_user_one">用户协议</string>
     <string name="app_setting">设置</string>
+
+    <string name="base_shop_status_normal">正常营业</string>
     <!-- 首页 -->
+    <string name="main_title">迅风智能洗车</string>
     <string name="app_main_order_btn">订单</string>
     <string name="app_main_user_btn">我的</string>
     <string name="app_main_scan_text">扫码洗车</string>
+    <!-- scan -->
+    <string name="scan_title">扫码洗车</string>
 
 </resources>

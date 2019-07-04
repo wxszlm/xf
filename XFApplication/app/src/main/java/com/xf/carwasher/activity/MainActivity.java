@@ -1,56 +1,66 @@
 package com.xf.carwasher.activity;
 
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.location.Location;
-import android.provider.SyncStateContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.animation.Animation;
-import android.view.animation.LinearInterpolator;
-import android.view.animation.RotateAnimation;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
-
 import com.alibaba.fastjson.JSONObject;
-import com.amap.api.interfaces.MapCameraMessage;
 import com.amap.api.maps2d.AMap;
-import com.amap.api.maps2d.AMapOptions;
-import com.amap.api.maps2d.CameraUpdate;
 import com.amap.api.maps2d.MapView;
 import com.amap.api.maps2d.model.BitmapDescriptorFactory;
-import com.amap.api.maps2d.model.CameraPosition;
 import com.amap.api.maps2d.model.LatLng;
 import com.amap.api.maps2d.model.Marker;
 import com.amap.api.maps2d.model.MarkerOptions;
 import com.amap.api.maps2d.model.MyLocationStyle;
+import com.squareup.picasso.Picasso;
 import com.xf.carwasher.R;
-import com.xf.carwasher.Utils.SHA;
 
+import net.tsz.afinal.FinalActivity;
+import net.tsz.afinal.annotation.view.ViewInject;
+
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity implements AMap.OnMyLocationChangeListener {
+public class MainActivity extends FinalActivity implements AMap.OnMyLocationChangeListener {
 
-    public static final String TAG = "MainActivity";
+    private static final String TAG = MainActivity.class.getSimpleName();
+    @ViewInject(id = R.id.map)
+    private MapView mMapView;
+    private AMap aMap = null;
 
-    MapView mMapView = null;
-    AMap aMap = null;
+    @ViewInject(id = R.id.dialog_shop_picture)
+    private ImageView dialogShopPicture;
+
+    @ViewInject(id=R.id.scan_btn)
+    private RelativeLayout scanBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initView();
         //在activity执行onCreate时执行mMapView.onCreate(savedInstanceState)，创建地图
         mMapView.onCreate(savedInstanceState);
         initMap();
         setLocation();
         setMarker();
-    }
-
-    public void initView(){
-        //获取地图控件引用
-        mMapView = (MapView) findViewById(R.id.map);
+     //   Picasso.with(getApplicationContext()).load("https://lanhu.oss-cn-beijing.aliyuncs.com/xd91b35749-a0f6-4178-8f40-573402d8ed59").into(dialogShopPicture);
+        Log.e(TAG,"MainActivity");
+        scanBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e(TAG,"scan");
+                Intent intent = new Intent(MainActivity.this,ScanActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void initMap(){

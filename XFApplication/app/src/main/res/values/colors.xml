@@ -9,8 +9,11 @@
     <color name="colorUser">#23A5FB</color>
     <color name="colorAgree">#666666</color>
     <color name="colorWhite">#ffffffff</color>
+    <color name="base_line">#ff707070</color>
     <!-- main -->
     <color name="base_text">#ff333333</color>
+    <color name="base_text2">#ff666666</color>
     <color name="main_tip">#ff707070</color>
+    <color name="base_normal">#ff23a5fb</color>
 
 </resources>

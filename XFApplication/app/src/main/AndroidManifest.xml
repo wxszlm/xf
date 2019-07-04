@@ -8,6 +8,12 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 摄像头、手电筒 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,13 +22,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activity.MeActivity"></activity>
+        <activity android:name=".activity.ScanActivity"></activity>
+        <activity android:name=".activity.MeActivity" />
 
         <service android:name="com.amap.api.location.APSService" />
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="e2a30224eabc00de2a853b51cdc75494"></meta-data>
+            android:value="e2a30224eabc00de2a853b51cdc75494" />
 
         <activity android:name=".activity.OptionFeedbackActivity" />
         <activity android:name=".activity.LoginActivity" />

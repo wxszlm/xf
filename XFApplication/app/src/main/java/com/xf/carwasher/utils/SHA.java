@@ -1,4 +1,4 @@
-package com.xf.carwasher.Utils;
+package com.xf.carwasher.utils;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
